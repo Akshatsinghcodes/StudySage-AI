@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudySage AI Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                S
+            </div>
+
+            <div>
+                <h2>StudySage</h2>
+                <span>AI Learning Lab</span>
+            </div>
+
+        </div>
+
+
+        <button id="homeBtn" class="home-btn">
+            ⌂ &nbsp; All 10 Tasks
+        </button>
+
+
+        <div class="sidebar-title">
+            AI TASKS
+        </div>
+
+        <div id="taskNavigation" class="task-navigation">
+            <!-- JavaScript will add tasks here -->
+        </div>
+
+
+        <!-- ================= AI SETTINGS ================= -->
+
+        <div class="settings-card">
+
+            <h3>Gemini AI Settings</h3>
+
+            <p>
+                Enter your own Gemini API key to use AI features.
+            </p>
+
+
+            <input
+                type="password"
+                id="apiKeyInput"
+                placeholder="Paste Gemini API key"
+            >
+
+
+            <div class="button-row">
+
+                <button id="saveKeyBtn" class="primary-btn">
+                    Use Key
+                </button>
+
+                <button id="clearKeyBtn" class="secondary-btn">
+                    Clear
+                </button>
+
+            </div>
+
+
+            <div id="keyStatus" class="key-status">
+                No API key configured
+            </div>
+
+
+            <!-- MODEL SELECT -->
+
+            <label class="setting-label">
+                Gemini Model
+            </label>
+
+            <select id="modelSelect" class="model-select">
+
+                <option value="gemini-3.8-flash">
+                    Gemini 3.8 Flash
+                </option>
+
+                <option value="gemini-3.7-flash">
+                    Gemini 3.7 Flash
+                </option>
+
+                <option value="gemini-3.6-flash">
+                    Gemini 3.6 Flash
+                </option>
+
+                <option value="gemini-3.5-flash">
+                    Gemini 3.5 Flash
+                </option>
+
+                <option value="gemini-3.5-flash-lite">
+                    Gemini 3.5 Flash-Lite
+                </option>
+
+                <option value="gemini-3.1-flash-lite">
+                    Gemini 3.1 Flash-Lite
+                </option>
+
+                <option value="gemini-2.5-flash">
+                    Gemini 2.5 Flash
+                </option>
+
+            </select>
+
+
+            <button id="testModelBtn" class="test-model-btn">
+                Test Selected Model
+            </button>
+
+
+            <label class="fallback-row">
+
+                <input
+                    type="checkbox"
+                    id="fallbackToggle"
+                    checked
+                >
+
+                <span>
+                    Automatic model fallback
+                </span>
+
+            </label>
+
+
+            <div id="modelStatus" class="model-status">
+                Model: Gemini 3.8 Flash
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <div class="eyebrow">
+                    AI POWERED STUDY PLATFORM
+                </div>
+
+                <h1 id="pageTitle">
+                    StudySage AI Lab
+                </h1>
+
+            </div>
+
+
+            <div class="system-status">
+
+                <span class="status-dot"></span>
+
+                AI Lab
+
+            </div>
+
+        </header>
+
+
+        <section id="content">
+
+            <!-- JavaScript loads content -->
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast" class="toast"></div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
